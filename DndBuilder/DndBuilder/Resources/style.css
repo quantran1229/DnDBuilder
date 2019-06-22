@@ -1,0 +1,27 @@
+﻿body {
+    background-color:#87CEFA;
+}
+
+.small_text_box
+{
+    width:20px;
+}
+
+.hp_text_box
+{
+    background-color:red;
+    border: 2px solid white;
+    text-align:center;
+    color:white;
+    min-width:24px;
+}
+
+.medium_text_box
+{
+    width:35px;
+    pading:10px;
+}
+#error_age,#error_name
+{
+    color:red;
+}

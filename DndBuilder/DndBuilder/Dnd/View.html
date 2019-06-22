@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>View</title>
+</head>
+<body onload="loadInformation()">
+<h1>CHARACTER</h1>
+Name  : <input type="text" id="char_name" onchange="checkname();" disabled="disabled"><p id="error_name"></p>
+Age   : <input type="number" id="char_age" max="500" min="0" value="24" onchange="checkage();" disabled="disabled"><p id="error_age"></p>
+Gender: <select id="char_gender" disabled="disabled">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other/No preference</option>
+        </select><br>
+Biography:<br><textarea id="char_bio" rows="5" cols="100" maxlength="500" placeholder="Enter biography..." disabled="disabled"></textarea><br>
+Level:<input type="number" id="char_level" max="20" min="1" value="1" onchange="updateHP()" disabled="disabled"><br>
+Race:<select id="char_race" onchange="onChangeRace();" disabled="disabled">
+        </select><br>
+Class:<select id="char_class" onchange="onChangeClass();" disabled="disabled">
+        </select><br>
+Spellcaser<input id="char_spellcaser" type="checkbox" disabled="disabled"><br>
+Hit Point:<input type="text" id="char_hp" disabled="disabled value = '0'" class="hp_text_box"><br>
+Ability Scores: Points left <input type="text" id="total_point" disabled="disabled" class="small_text_box" value="20"><br>
+*   Constitution:<input type="text" id="in_con" disabled="disabled" class="small_text_box">+
+        <input type="number" id="con" class="medium_text_box" value="0" onchange="updateAbility(this)" min="0" disabled="disabled">
+        <br>
+*   Dexterity   :<input type="text" id="in_dex" disabled="disabled" class="small_text_box">+
+        <input type="number" id="dex" class="medium_text_box" value="0" onchange="updateAbility(this)" min="0" disabled="disabled">
+        <br>
+*   Strength    :<input type="text" id="in_str" disabled="disabled" class="small_text_box">+
+        <input type="number" id="str" class="medium_text_box" value="0" onchange="updateAbility(this)" min="0" disabled="disabled">
+        <br>
+*   Charisma    :<input type="text" id="in_cha" disabled="disabled" class="small_text_box">+
+        <input type="number" id="cha" class="medium_text_box" value="0" onchange="updateAbility(this)" min="0" disabled="disabled">
+        <br>
+*   Inteligence :<input type="text" id="in_int" disabled="disabled" class="small_text_box">+
+        <input type="number" id="int" class="medium_text_box" value="0" onchange="updateAbility(this)" min="0" disabled="disabled">
+        <br>
+*   Wisdom      :<input type="text" id="in_wis" disabled="disabled" class="small_text_box">+
+        <input type="number" id="wis" class="medium_text_box" value="0" onchange="updateAbility(this)" min="0" disabled="disabled">
+        <br>
+<button id="back_btn" onclick="location.href='ViewList.html'">BACK</button>
+<button id = "edit_btn" onclick="edit()">Edit</button>
+<button id = "submit_btn" onclick="submit()">Submit</button>
+<button id = "delete_btn" onclick="onDelete()">Delete</button>
+<button id = "download_btn" onclick="onDownload()">Download</button>
+<a id="download_link" href= "" download="character.xml">Download</a>
+<script language="JavaScript" type="text/JavaScript" src="../Controller/view.js"></script>
+</body>
+</html>

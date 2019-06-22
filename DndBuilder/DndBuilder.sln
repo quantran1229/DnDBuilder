@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DndBuilder", "DndBuilder\DndBuilder.csproj", "{425C780E-48A5-4B74-A85A-FFB83F54DA77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DndBuilder.Tests", "DndBuilder.Tests\DndBuilder.Tests.csproj", "{2EEBE51D-9595-4F76-98DF-FC49A37ABAFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{425C780E-48A5-4B74-A85A-FFB83F54DA77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{425C780E-48A5-4B74-A85A-FFB83F54DA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{425C780E-48A5-4B74-A85A-FFB83F54DA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{425C780E-48A5-4B74-A85A-FFB83F54DA77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EEBE51D-9595-4F76-98DF-FC49A37ABAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EEBE51D-9595-4F76-98DF-FC49A37ABAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EEBE51D-9595-4F76-98DF-FC49A37ABAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EEBE51D-9595-4F76-98DF-FC49A37ABAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
